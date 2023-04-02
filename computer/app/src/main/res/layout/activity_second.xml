@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:stretchColumns="*">
+    <!--android:stretchColumns="0":
+    表示第一列可以进行拉伸。
+    用来设置TableLayout的子标签TableRow
+    的某列是否拉伸占满剩余的空间
+    -->
+    <TextView
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="100dp"
+        android:background="#ffff"
+        android:textSize="30sp" />
+    <!--layout_marginTop 指定该属性所在控件距上部最近控件的最小值-->
+    <TableRow
+        style="@style/rowStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/bc"
+            style="@style/btyStyle"
+            android:layout_marginRight="5dp"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/bde"
+            style="@style/btyStyle"
+            android:layout_marginRight="5dp"
+            android:text="De" />
+
+        <Button
+            android:id="@+id/b_add"
+            style="@style/btyStyle"
+            android:layout_marginRight="5dp"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/remove"
+            style="@style/btyStyle"
+            android:text="-" />
+    </TableRow>
+
+    <TableRow style="@style/rowStyle">
+
+        <Button
+            android:id="@+id/b7"
+            style="@style/btyStyle"
+            android:layout_marginRight="5dp"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/b8"
+            style="@style/btyStyle"
+            android:layout_marginRight="5dp"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/b9"
+            style="@style/btyStyle"
+            android:layout_marginRight="5dp"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/multiply"
+            style="@style/btyStyle"
+            android:text="*" />
+    </TableRow>
+
+    <TableRow style="@style/rowStyle">
+
+        <Button
+            android:id="@+id/b6"
+            style="@style/btyStyle"
+            android:layout_marginRight="5dp"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/b5"
+            style="@style/btyStyle"
+            android:layout_marginRight="5dp"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/b4"
+            style="@style/btyStyle"
+            android:layout_marginRight="5dp"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/divide"
+            style="@style/btyStyle"
+            android:text="÷" />
+    </TableRow>
+
+    <TableRow style="@style/rowStyle">
+
+        <Button
+            android:id="@+id/b1"
+            style="@style/btyStyle"
+            android:layout_marginRight="5dp"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/b2"
+            style="@style/btyStyle"
+            android:layout_marginRight="5dp"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/b3"
+            style="@style/btyStyle"
+            android:layout_marginRight="5dp"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/dot"
+            style="@style/btyStyle"
+            android:text="." />
+    </TableRow>
+
+    <TableRow
+        style="@style/rowStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/b0"
+            style="@style/btyStyle"
+            android:layout_marginRight="5dp"
+            android:layout_span="2"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/equal"
+            style="@style/btyStyle"
+            android:layout_span="2"
+            android:text="=" />
+    </TableRow>
+</TableLayout>

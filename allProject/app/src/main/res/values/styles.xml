@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 行数样式-->
+    <style name="rowStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <!-- 按钮演示 -->
+    <style name="btyStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <!--线性计算机-->
+    <style name="b1tyStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">105dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="b2tyStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">105dp</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+</resources>

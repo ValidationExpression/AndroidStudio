@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="桃园"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:background="#1E90FF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/peach01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:text="桃1"
+            android:textSize="35dp"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/peach02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:text="桃2"
+            android:textSize="35dp"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/peach03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:text="桃3"
+            android:textSize="35dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/peach04"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="桃4"
+            android:textSize="35dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/peach_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="出桃园"
+        android:textSize="35dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
