@@ -1,5 +1,6 @@
 package com.example.datalogin;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.database.Cursor;
@@ -18,6 +19,7 @@ import android.widget.Toast;
 import com.example.login.DBHelper;
 import com.example.login.LoginCreate;
 import com.example.shopping.Shopping;
+import com.example.shopping.Shopping1;
 
 import java.util.Map;
 
@@ -69,8 +71,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (dbHelper.validUser(emil, password1)) {
                     Toast.makeText(MainActivity.this, "登录成功！", Toast.LENGTH_SHORT).show();
                     //跳转到登录成功后的页面
-                    Intent intent0 = new Intent(MainActivity.this, Shopping.class);
-                    startActivity(intent0);
+                    Intent intent0 = new Intent(MainActivity.this, Shopping1.class);
+                    startActivityForResult(intent0,1);
                 } else {
                     Toast.makeText(MainActivity.this, "用户名或密码错误！", Toast.LENGTH_SHORT).show();
                 }
@@ -78,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.login_create:
                 //设置跳转方式(注册)
                 Intent intent1 = new Intent(MainActivity.this, LoginCreate.class);
-                startActivity(intent1);
+                startActivityForResult(intent1,1);
         }
     }
 
@@ -98,5 +100,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         //保存用户信息到data.txt文件
         boolean isSaveSucccess = FileSaveInData.saveUserInfo(this, emil, password);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data){
+        super.onActivityResult(requestCode,resultCode,data);
+        String e="",p;
+        if (requestCode == 1 && resultCode==1){
+            String emil = data.getStringExtra("emil");
+            String password = data.getStringExtra("password");
+            login_emil.setText(emil);
+            login_passwd.setText(password);
+
+        }
     }
 }

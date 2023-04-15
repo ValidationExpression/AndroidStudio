@@ -41,6 +41,7 @@
             android:layout_marginRight="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
             android:hint="密        码:"
             android:textSize="25dp"/>
         <EditText
@@ -49,6 +50,7 @@
             android:layout_marginRight="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
             android:hint="确认密码:"
             android:textSize="25dp"/>
         <RadioGroup

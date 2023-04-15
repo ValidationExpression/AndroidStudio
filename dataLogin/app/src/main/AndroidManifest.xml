@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DataLogin"
         tools:targetApi="31">
-        <activity android:name="com.example.shopping.Shopping" />
+        <activity android:name="com.example.shopping.Shopping1" />
         <activity android:name="com.example.login.LoginCreate" />
         <activity
             android:name=".MainActivity"

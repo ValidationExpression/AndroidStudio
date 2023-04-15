@@ -3,6 +3,7 @@ package com.example.login;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -101,7 +102,6 @@ public class LoginCreate extends AppCompatActivity implements View.OnClickListen
 
     @Override
     public void onClick(View view) {
-
         //字典对象，可以用来存储键值对
         ContentValues values;
         switch (view.getId()){
@@ -136,6 +136,11 @@ public class LoginCreate extends AppCompatActivity implements View.OnClickListen
 
     //返回到上一界面
     private void back(){
+        //数据回传
+        Intent intent = new Intent();
+        intent.putExtra("emil",emil);
+        intent.putExtra("password",password1);
+        setResult(1,intent);
         LoginCreate.this.finish();
     }
     //返回上一页面(利用是本机的返回按键)
